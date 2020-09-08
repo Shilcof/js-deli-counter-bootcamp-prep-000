@@ -12,15 +12,16 @@ function nowServing(line) {
 }
 
 function currentLine(line) {
-  var message = ""
+  var message = "";
+  var i = 0;
   if (line.length === 0) {
     message = 'The line is currently empty.';
   } else if (line.length === 1) {
-    message = `${1}. ${line[0]}`
+    message = `${1}. ${line[0]}`;
   } else {
-    message = `${1}. ${line[0]}`
+    message = `${1}. ${line[0]}`;
     for (i = 0; i < line.length; i ++) {
-      message = message + `, ${i+1}. ${line[i]}`
+      message = message + `, ${i+1}. ${line[i]}`;
     }
   }
   return message
