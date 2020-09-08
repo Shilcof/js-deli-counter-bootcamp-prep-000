@@ -15,9 +15,9 @@ function currentLine(line) {
   if (line.length === 0) {
     message = 'The line is currently empty.';
   } else if (line.length === 1) {
-    message = `${i+1}. ${line[0]}`
+    message = `${1}. ${line[0]}`
   } else {
-    message = `${i+1}. ${line[0]}`
+    message = `${1}. ${line[0]}`
     for (i = 0; i < line.length; i ++) {
       message = message + `, ${i+1}. ${line[i]}`
     }
