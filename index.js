@@ -12,5 +12,5 @@ function nowServing(line) {
 }
 
 function currentLine(line) {
-  return `${line.length === 0 ? 'There is nobody waiting to be served!' : `Currently serving ${line[0]}.`}`
+  return `${line.length === 0 ? 'The line is currently empty.' : `Currently serving ${line[0]}.`}`
 }
