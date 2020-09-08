@@ -6,7 +6,8 @@ function takeANumber(line, name) {
 }
 
 function nowServing(line) {
-  var message = `${line.length === 0 ? 'There is nobody waiting to be served!' : `Currently serving ${line[0]}.`}`;
+  var message = `${line.length === 0 ? 'The line is currently empty.
+  ' : `Currently serving ${line[0]}.`}`;
   line.shift();
   return message
 }
