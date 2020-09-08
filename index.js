@@ -6,6 +6,7 @@ function takeANumber(line, name) {
 }
 
 function nowServing(line) {
+  {line.length === 0 ? 'line[0]' : `${line[0]}`}
   return `${line[0]}`;
   line.shift();
   return message
